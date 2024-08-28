@@ -1,0 +1,107 @@
+.banner-informations {
+    position: relative; 
+    color: white;
+
+}
+
+#fundo-banner-man {
+    width: 100%;
+    height: auto;
+    margin-top: -25%;
+    
+}
+
+.banner-informations ul {
+    list-style: none;
+    padding: 0;
+}
+
+.banner-informations li {
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-align: left;
+
+}
+.banner-informations .highlight-text {
+    position: absolute;
+    margin-top: -100%;
+    font-size: 55px; 
+    font-weight: bold;
+    margin-left: -1300px;
+}
+
+.banner-informations .sub-text {
+    position: absolute;
+    margin-top: -70%;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: -1450px;
+
+}
+
+#scroll-png{
+    position: absolute;
+    bottom: 50%;
+    left: 97%;
+    transform: translateX(-50%);
+    z-index: 4;
+
+}
+
+#esfera-cromada{
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+    z-index: 5;
+}
+#traço-verde1,
+#traço-verde2,
+#traço-verde3 {
+    position: absolute;
+    width: 600px;
+    z-index: 3;
+}
+
+#traço-verde2 {
+    width: 900px;
+    top: 67%; /* Posição específica para traço 2 */
+    left: -1%; /* Posição específica para traço 2 */
+}
+
+#traço-verde3 {
+    width: 950px;
+    top: 41%; /* Posição específica para traço 3 */
+    left: 25%; /* Posição específica para traço 3 */
+}
+#telefone-ip{
+    position: absolute;
+    left: 75%;
+    top: 63%;
+}
+
+.sub-text-telefone{
+    position: absolute;
+    top: 80%;
+    left: 1450px;
+    color: black;
+    z-index: 2;
+}
+
+#barra-azul{
+    position: absolute;
+    width: 100%;
+    top: 99%;
+    z-index: 1;
+}
+
+.text-banner-inform{
+    position: absolute;
+    top: 108%; 
+    left: 50%;
+    transform: translateX(-70%); 
+    color: white; 
+    font-size: 55px; 
+    z-index: 2; 
+    font-weight: bold;
+    white-space: nowrap;
+}
