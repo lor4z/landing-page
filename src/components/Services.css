@@ -2,29 +2,49 @@
     position: absolute;
     top:180%;
     left: 10%;
+    height: 75%;
 
 }
 
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 40px;
+    gap: 20px; /* Aumentei um pouco para melhor espaçamento */
+    padding: 270px; /* Reduzi o padding para ajustar o conteúdo */
     background-color: #ffffff;
 }
 
+
 .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha itens ao início */
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 170px;
-    text-align: center;
+    padding: 20px;
     transition: transform 0.3s ease;
+    text-align: left;
 }
 
+.service-item .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+
 .service-item img {
-    max-width: 80px;
-    margin-bottom: 20px;
+    max-width: 150px;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+
 }
 
 .service-item h3 {
@@ -39,20 +59,57 @@
     margin-bottom: 20px;
 }
 
-.service-item button {
-    background-color: #0582B9;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+.button-more-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px; /* Ajuste o padding conforme necessário */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    background: linear-gradient(121deg, #0582B9 0%, #0582B9 67%, #25AC7D 100%);
+    border-radius: 21px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    line-height: 1; /* Ajusta a altura da linha para o alinhamento vertical */
+    gap: 8px; /* Espaçamento entre o texto e a imagem */
+    min-width: 120px; /* Largura mínima */
+    height: 40px; /* Altura fixa para todos os botões */
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.seta-img {
+    width: 16px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+
+.button-more-info img {
+    margin-left: 10px;
 }
 
 .service-item button:hover {
     background-color: #046A99;
 }
 
-.service-item:hover {
-    transform: translateY(-5px);
+.button-more-info:hover {
+    background: #0582B9;
+    box-shadow: 0px 3px 6px #25AC7D;
+    border-radius: 21px;
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.bi {
+    position: static;
+    left: auto;
+}
+
+.text-content {
+    display: flex;
+    gap: 15px; /* Espaçamento entre o título e a imagem */
+    margin-bottom: 20px; /* Espaçamento inferior, ajuste conforme necessário */
+}
+.service-image {
+    position: absolute;
+    width: 120px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
 }

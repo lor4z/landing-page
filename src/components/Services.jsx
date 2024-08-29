@@ -7,6 +7,7 @@ import cloudBackup from '../assets/backup.png';
 import suporteTecnico from '../assets/suporte.png';
 import infraRede from '../assets/rede.png';
 import circuitoSeguranca from '../assets/camerasegurança.png';
+import seta from '../assets/seta.png';
 
 const services = [
     {
@@ -48,10 +49,17 @@ const Services = () => {
             <div className="services-grid">
                 {services.map((service, index) => (
                     <div className="service-item" key={index}>
-                        <img src={service.img} alt={service.title}/>
-                        <h3>{service.title}</h3>
-                        <p>{service.description}</p>
-                        <button>Saiba Mais</button>
+                        <div className="text-content">
+                        <img src={service.img} alt={service.title} className="service-image"/>
+                            <h3><strong>{service.title}</strong></h3>
+                            <p>{service.description}</p>
+                            <div className="button-container">
+                                <button className="button-more-info">
+                                    Saiba Mais
+                                    <img src={seta} alt="seta branca" className="seta-img"/>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 ))}
             </div>
