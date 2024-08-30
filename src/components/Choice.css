@@ -1,0 +1,45 @@
+.inforTelenova {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Ajuste a lacuna entre as imagens e o texto conforme necessário */
+}
+
+.img-tel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#logo-tel {
+    position: relative;
+    left: -35%;
+    transform: translateY(-25%);
+    z-index: 1; /* Garante que a logo esteja acima das linhas */
+    max-width: 750px;
+}
+
+.text-tel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 500px; /* Ajuste a largura do texto conforme necessário */
+}
+
+.button-tel, .button-tel2 {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    background: transparent linear-gradient(121deg, #0582B9 0%, #0582B9 67%, #25AC7D 100%) 0% 0% no-repeat padding-box;
+    border-radius: 21px;
+    opacity: 1;
+    border: none;
+}
+
+.seta-img {
+    margin-left: 10px;
+}
+
+ul{
+    flex-direction: column;
+}

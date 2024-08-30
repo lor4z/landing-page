@@ -51,7 +51,7 @@ const Services = () => {
                     <div className="service-item" key={index}>
                         <div className="text-content">
                         <img src={service.img} alt={service.title} className="service-image"/>
-                            <h3><strong>{service.title}</strong></h3>
+                            <h3>{service.title}</h3>
                             <p>{service.description}</p>
                             <div className="button-container">
                                 <button className="button-more-info">
