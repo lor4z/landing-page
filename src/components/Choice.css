@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Ajuste a lacuna entre as imagens e o texto conforme necessário */
+  
 }
 
 .img-tel {
@@ -13,7 +13,7 @@
 
 #logo-tel {
     position: relative;
-    left: -35%;
+    left: -50%;
     transform: translateY(-25%);
     z-index: 1; /* Garante que a logo esteja acima das linhas */
     max-width: 750px;
@@ -24,22 +24,55 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 500px; /* Ajuste a largura do texto conforme necessário */
+    position: absolute;
+    left: 50%;
+    top: 280%;
 }
 
 .button-tel, .button-tel2 {
-    margin: 10px 0;
+    margin-top: -18px;
+    padding: 10px 20px;
+    background: transparent linear-gradient(121deg, #0582B9 0%, #0582B9 67%, #25AC7D 100%);
+    border-radius: 21px;
+    border: none;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+}
+.seta-img {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.text-tel h2 {
+    color: #0077b6;
+    font-size: 2em;
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    font-weight: bold;
+}
+
+.text-tel p, .text-tel ul {
+    position: relative;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    left: 4%;
+}
+
+.text-tel ul {
+    padding-left: 20px; /* Garantir que a lista tenha um espaçamento adequado */
+}
+
+.text-tel li {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.button-info{
     display: flex;
     align-items: center;
-    background: transparent linear-gradient(121deg, #0582B9 0%, #0582B9 67%, #25AC7D 100%) 0% 0% no-repeat padding-box;
-    border-radius: 21px;
-    opacity: 1;
-    border: none;
-}
-
-.seta-img {
-    margin-left: 10px;
-}
-
-ul{
-    flex-direction: column;
+    margin: 10px 0;
 }
